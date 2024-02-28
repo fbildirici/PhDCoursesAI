@@ -36,7 +36,7 @@ Bu repo, bilgi alışverişi için açıktır. Eğer ilginç bir proje, araştı
 
 ## 📬 İletişim
 
-Sorularınız, önerileriniz veya işbirliği teklifleriniz için benimle [email@example.com](mailto:email@example.com) adresinden iletişime geçebilirsiniz.
+Sorularınız, önerileriniz veya işbirliği teklifleriniz için benimle iletişime geçebilirsiniz.
 
 ---
 
