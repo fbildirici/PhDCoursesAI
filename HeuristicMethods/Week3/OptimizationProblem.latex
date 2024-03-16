@@ -1,0 +1,106 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{hyperref}
+
+\begin{document}
+
+\title{Mathematical Optimization Model for Kidney Transplantation}
+\author{Fatih Bildirici \\
+    \textit{PhD Student in Artifical Intelligence} \\
+    \textit{Ankara University} \\
+    \textit{Ankara, Turkey} \\
+    \href{mailto:fatihbildirici.dev@gmail.com}{fatihbildirici.dev@gmail.com}
+}
+\date{\today}
+
+\maketitle
+
+\section*{Introduction}
+In the process of kidney transplantation, matching suitable donors with recipients is critical for improving patient survival rates and efficient use of resources. In this document, we propose a mathematical optimization model designed to find the most appropriate matches between potential donors and patients awaiting kidney transplants.
+
+\section{Mathematical Model}
+Our model aims to maximize suitable matches between patients and donors, thereby enhancing the overall success rate of transplants.
+
+\subsection{Variables}
+\begin{itemize}
+  \item \( x_{ij} \) - If the kidney from donor \( i \) is transplanted to patient \( j \), then it is 1, otherwise 0.
+\end{itemize}
+
+\subsection{Parameters}
+\begin{itemize}
+  \item \( c_{ij} \) - The expected success score for transplanting from donor \( i \) to patient \( j \).
+  \item \( M \) - A large positive constant (for the Big-M method).
+  \item \( N_d \) - Number of donors.
+  \item \( N_p \) - Number of patients.
+\end{itemize}
+
+\subsection{Objective Function}
+We aim to find matches that maximize the success score:
+\[
+\text{Maximize} \quad Z = \sum_{i=1}^{N_d} \sum_{j=1}^{N_p} c_{ij} x_{ij}
+\]
+
+\subsection{Constraints}
+Each patient may receive at most one kidney:
+\[
+\sum_{i=1}^{N_d} x_{ij} \leq 1, \quad \forall j \in \{1, \ldots, N_p\}
+\]
+Each donor can give at most one kidney:
+\[
+\sum_{j=1}^{N_p} x_{ij} \leq 1, \quad \forall i \in \{1, \ldots, N_d\}
+\]
+Tissue compatibility:
+\[
+x_{ij} = 0 \quad \text{if donor \( i \) is not compatible with patient \( j \)}
+\]
+Matching variables are binary:
+\[
+x_{ij} \in \{0,1\}, \quad \forall i, j
+\]
+
+\section{Summary}
+The proposed model takes into account various clinical and ethical criteria such as tissue compatibility, priority based on waiting time, and medical factors to find the most suitable matches for kidney transplantation. Solutions of this model, adjusted based on real-world data and clinical protocols, have the potential to save many lives and improve post-transplant survival rates.
+
+
+\section{Classifications}
+
+Let's explore the classification of the kidney transplantation optimization problem according to different criteria, reflecting on the principles of optimization problem classification.
+
+\subsection{Constraints}
+
+The kidney transplantation optimization problem incorporates various constraints, limiting the feasible solution space. These constraints ensure that each patient can receive at most one kidney, each donor can give at most one kidney, and tissue compatibility between donors and recipients is maintained. Thus, we classify this problem as a \textbf{Constrained Optimization Problem}.
+
+The constraints are formulated as follows:
+\begin{itemize}
+    \item Each patient can receive at most one kidney:
+    \[
+    \sum_{i=1}^{N_d} x_{ij} \leq 1, \quad \forall j
+    \]
+    \item Each donor can give at most one kidney:
+    \[
+    \sum_{j=1}^{N_p} x_{ij} \leq 1, \quad \forall i
+    \]
+    \item Tissue compatibility must be satisfied:
+    \[
+    x_{ij} = 0 \text{ if donor \(i\) is not compatible with patient \(j\)}
+    \]
+\end{itemize}
+
+\subsection{Nature of Design Variables: Static Optimization Problems}
+
+Considering the nature of the design variables, the kidney transplantation optimization problem is categorized as a \textbf{Static Optimization Problem}. This classification stems from the fact that the optimization does not involve decision variables that change over time; instead, it focuses on creating a static matching between donors and recipients based on the existing conditions and constraints.
+
+\subsection{Based on Permissible Values of the Design Variables: Integer Programming Problems}
+Since the decision variables \(x_{ij}\) are binary, indicating whether a donor's kidney is transplanted to a recipient, our problem is an \textbf{Integer Programming Problem}.
+
+
+\subsection{Based on the Number of Objective Functions: Single Objective Programming Problem}
+The optimization problem is a \textbf{Single Objective Programming Problem}, aiming to maximize the overall success of the transplants.
+
+\subsection{Deterministic Nature of the Variables: Deterministic Programming Problem}
+The kidney transplantation optimization problem is a \textbf{Deterministic Programming Problem} since it operates under the assumption that all parameters (\(c_{ij}\), compatibility constraints) are known with certainty.
+
+
+\end{document}
