@@ -1,0 +1,33 @@
+pragma solidity ^0.8.0;
+
+contract DeveloperRewards {
+    mapping(address => uint256) public performanceScores;
+    mapping(address => uint256) public tokenBalances;
+
+    address public admin;
+    uint256 public totalTokenSupply;
+    uint256 public distributedTokens;
+
+    constructor(uint256 _totalTokenSupply) {
+        admin = msg.sender;
+        totalTokenSupply = _totalTokenSupply;
+        distributedTokens = 0;
+    }
+
+    function setPerformanceScore(address developer, uint256 score) public {
+        require(msg.sender == admin, "Unauthorized: Only the admin can set scores.");
+        performanceScores[developer] = score;
+    }
+
+    function distributeRewards(address developer) public {
+        require(msg.sender == admin, "Unauthorized: Only the admin can distribute rewards.");
+        uint256 rewardAmount = calculateReward(performanceScores[developer]);
+        require(rewardAmount <= (totalTokenSupply - distributedTokens), "Insufficient tokens remaining.");
+        tokenBalances[developer] += rewardAmount;
+        distributedTokens += rewardAmount;
+    }
+
+    function calculateReward(uint256 score) private view returns (uint256) {
+        return (totalTokenSupply * score) / 1000; // Reward calculation logic
+    }
+}
