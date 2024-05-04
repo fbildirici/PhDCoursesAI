@@ -1,0 +1,18 @@
+Pseudocode:
+
+Performans Metriklerini Tanımla:
+Kod Kalitesi, Akran İncelemesi, Hata Giderme ve İşbirliği gibi performans ölçütlerini ve bunlara atanacak ağırlıkları tanımla.
+Geliştirici Performans Verilerini Topla:
+Her bir geliştirici için, belirlenen performans metriklerine ait verileri al.
+Performans Skorunu Hesapla:
+Her geliştirici için, ağırlıklı ortalama hesapla:
+Kod Kalitesi puanını belirli bir ağırlıkla çarp.
+Akran İncelemesi, Hata Giderme ve İşbirliği için de aynı yöntemi uygula.
+Bu puanları toplayarak toplam performans skorunu elde et.
+Toplam Performans Puanını Hesapla:
+Tüm geliştiricilerin performans puanlarını topla.
+Token Tahsisatı Yap:
+Her geliştiricinin toplam performans puanındaki payını belirle.
+Her geliştiriciye, bu paya göre token tahsis et.
+Tokenları Dağıt:
+Tahsis edilen tokenları her geliştiricinin cüzdan adresine gönder.
