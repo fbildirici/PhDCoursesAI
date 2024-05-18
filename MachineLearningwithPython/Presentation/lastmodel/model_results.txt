@@ -1,0 +1,120 @@
+Model: Logistic Regression
+Accuracy: 0.9130
+Precision: 0.8333
+Recall: 0.2778
+F1 Score: 0.4167
+Cross-Validation Mean: 0.9359
+Confusion Matrix:
+[[142   1]
+ [ 13   5]]
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.92      0.99      0.95       143
+           1       0.83      0.28      0.42        18
+
+    accuracy                           0.91       161
+   macro avg       0.87      0.64      0.68       161
+weighted avg       0.91      0.91      0.89       161
+
+
+Model: KNN
+Accuracy: 0.9130
+Precision: 0.7500
+Recall: 0.3333
+F1 Score: 0.4615
+Cross-Validation Mean: 0.9500
+Confusion Matrix:
+[[141   2]
+ [ 12   6]]
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.92      0.99      0.95       143
+           1       0.75      0.33      0.46        18
+
+    accuracy                           0.91       161
+   macro avg       0.84      0.66      0.71       161
+weighted avg       0.90      0.91      0.90       161
+
+
+Model: Random Forest
+Accuracy: 0.9317
+Precision: 1.0000
+Recall: 0.3889
+F1 Score: 0.5600
+Cross-Validation Mean: 0.9422
+Confusion Matrix:
+[[143   0]
+ [ 11   7]]
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.93      1.00      0.96       143
+           1       1.00      0.39      0.56        18
+
+    accuracy                           0.93       161
+   macro avg       0.96      0.69      0.76       161
+weighted avg       0.94      0.93      0.92       161
+
+
+Model: Kernel SVM
+Accuracy: 0.9193
+Precision: 1.0000
+Recall: 0.2778
+F1 Score: 0.4348
+Cross-Validation Mean: 0.9406
+Confusion Matrix:
+[[143   0]
+ [ 13   5]]
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.92      1.00      0.96       143
+           1       1.00      0.28      0.43        18
+
+    accuracy                           0.92       161
+   macro avg       0.96      0.64      0.70       161
+weighted avg       0.93      0.92      0.90       161
+
+
+Model: Naive Bayes
+Accuracy: 0.9193
+Precision: 0.6667
+Recall: 0.5556
+F1 Score: 0.6061
+Cross-Validation Mean: 0.9031
+Confusion Matrix:
+[[138   5]
+ [  8  10]]
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.95      0.97      0.96       143
+           1       0.67      0.56      0.61        18
+
+    accuracy                           0.92       161
+   macro avg       0.81      0.76      0.78       161
+weighted avg       0.91      0.92      0.92       161
+
+
+Model: Decision Tree
+Accuracy: 0.9255
+Precision: 0.7143
+Recall: 0.5556
+F1 Score: 0.6250
+Cross-Validation Mean: 0.9125
+Confusion Matrix:
+[[139   4]
+ [  8  10]]
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.95      0.97      0.96       143
+           1       0.71      0.56      0.62        18
+
+    accuracy                           0.93       161
+   macro avg       0.83      0.76      0.79       161
+weighted avg       0.92      0.93      0.92       161
+
+
