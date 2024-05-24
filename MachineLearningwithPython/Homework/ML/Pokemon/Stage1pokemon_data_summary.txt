@@ -1,0 +1,57 @@
+Head of the data:
+                     abilities  against_bug  against_dark  against_dragon  against_electric  against_fairy  against_fight  against_fire  against_flying  against_ghost  against_grass  against_ground  against_ice  against_normal  against_poison  against_psychic  against_rock  against_steel  against_water  attack  base_egg_steps  base_happiness  base_total capture_rate   classfication  defense  experience_growth  height_m  hp     japanese_name        name  percentage_male  pokedex_number  sp_attack  sp_defense  speed  type1   type2  weight_kg  generation  is_legendary
+0  ['Overgrow', 'Chlorophyll']          1.0           1.0             1.0               0.5            0.5            0.5           2.0             2.0            1.0           0.25             1.0          2.0             1.0             1.0              2.0           1.0            1.0            0.5      49            5120              70         318           45    Seed Pokémon       49            1059860       0.7  45  Fushigidaneフシギダネ   Bulbasaur             88.1               1         65          65     45  grass  poison        6.9           1             0
+1  ['Overgrow', 'Chlorophyll']          1.0           1.0             1.0               0.5            0.5            0.5           2.0             2.0            1.0           0.25             1.0          2.0             1.0             1.0              2.0           1.0            1.0            0.5      62            5120              70         405           45    Seed Pokémon       63            1059860       1.0  60   Fushigisouフシギソウ     Ivysaur             88.1               2         80          80     60  grass  poison       13.0           1             0
+2  ['Overgrow', 'Chlorophyll']          1.0           1.0             1.0               0.5            0.5            0.5           2.0             2.0            1.0           0.25             1.0          2.0             1.0             1.0              2.0           1.0            1.0            0.5     100            5120              70         625           45    Seed Pokémon      123            1059860       2.0  80  Fushigibanaフシギバナ    Venusaur             88.1               3        122         120     80  grass  poison      100.0           1             0
+3     ['Blaze', 'Solar Power']          0.5           1.0             1.0               1.0            0.5            1.0           0.5             1.0            1.0           0.50             2.0          0.5             1.0             1.0              1.0           2.0            0.5            2.0      52            5120              70         309           45  Lizard Pokémon       43            1059860       0.6  39      Hitokageヒトカゲ  Charmander             88.1               4         60          50     65   fire     NaN        8.5           1             0
+4     ['Blaze', 'Solar Power']          0.5           1.0             1.0               1.0            0.5            1.0           0.5             1.0            1.0           0.50             2.0          0.5             1.0             1.0              1.0           2.0            0.5            2.0      64            5120              70         405           45   Flame Pokémon       58            1059860       1.1  58       Lizardoリザード  Charmeleon             88.1               5         80          65     80   fire     NaN       19.0           1             0
+
+Info about the data:
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 801 entries, 0 to 800
+Data columns (total 41 columns):
+ #   Column             Non-Null Count  Dtype  
+---  ------             --------------  -----  
+ 0   abilities          801 non-null    object 
+ 1   against_bug        801 non-null    float64
+ 2   against_dark       801 non-null    float64
+ 3   against_dragon     801 non-null    float64
+ 4   against_electric   801 non-null    float64
+ 5   against_fairy      801 non-null    float64
+ 6   against_fight      801 non-null    float64
+ 7   against_fire       801 non-null    float64
+ 8   against_flying     801 non-null    float64
+ 9   against_ghost      801 non-null    float64
+ 10  against_grass      801 non-null    float64
+ 11  against_ground     801 non-null    float64
+ 12  against_ice        801 non-null    float64
+ 13  against_normal     801 non-null    float64
+ 14  against_poison     801 non-null    float64
+ 15  against_psychic    801 non-null    float64
+ 16  against_rock       801 non-null    float64
+ 17  against_steel      801 non-null    float64
+ 18  against_water      801 non-null    float64
+ 19  attack             801 non-null    int64  
+ 20  base_egg_steps     801 non-null    int64  
+ 21  base_happiness     801 non-null    int64  
+ 22  base_total         801 non-null    int64  
+ 23  capture_rate       801 non-null    object 
+ 24  classfication      801 non-null    object 
+ 25  defense            801 non-null    int64  
+ 26  experience_growth  801 non-null    int64  
+ 27  height_m           781 non-null    float64
+ 28  hp                 801 non-null    int64  
+ 29  japanese_name      801 non-null    object 
+ 30  name               801 non-null    object 
+ 31  percentage_male    703 non-null    float64
+ 32  pokedex_number     801 non-null    int64  
+ 33  sp_attack          801 non-null    int64  
+ 34  sp_defense         801 non-null    int64  
+ 35  speed              801 non-null    int64  
+ 36  type1              801 non-null    object 
+ 37  type2              417 non-null    object 
+ 38  weight_kg          781 non-null    float64
+ 39  generation         801 non-null    int64  
+ 40  is_legendary       801 non-null    int64  
+dtypes: float64(21), int64(13), object(7)
+memory usage: 256.7+ KB
