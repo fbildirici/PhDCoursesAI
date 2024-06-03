@@ -1,0 +1,50 @@
+Introduction
+
+* Pétrowski, A., & Ben-Hamida, S. (2017). Evolutionary algorithms. John Wiley & Sons.
+* Price, K. V., Storn, R. M., & Lampinen, J. A. (2005). The differential evolution algorithm. Differential evolution: a practical approach to global optimization, 37-134.
+* Plagianakos, V. P., Tasoulis, D. K., & Vrahatis, M. N. (2008). A review of major application areas of differential evolution. Advances in differential evolution, 197-238.
+* Amiri, M., & Barbin, J. P. (2015). New approach for solving software project scheduling problem using differential evolution algorithm. International journal in foundations of computer science & technology (IJFCST), 5(1), 1-9.
+
+Karimi, A., & Gandomani, T. J. (2021). Software development effort estimation modeling using a combination of fuzzy-neural network and differential evolution algorithm. International Journal of Electrical and Computer Engineering, 11(1), 707.--------------
+
+
+
+Evolutionary algorithms
+
+* Yang, X. S. (2010). Nature-inspired metaheuristic algorithms. Luniver press.
+* Bozorg-Haddad, O., Solgi, M., & Loáiciga, H. A. (2017). Meta-heuristic and evolutionary algorithms for engineering optimization. John Wiley & Sons.----------
+* Malik, H., Iqbal, A., Joshi, P., Agrawal, S., & Bakhsh, F. I. (Eds.). (2021). Metaheuristic and evolutionary computation: algorithms and applications (Vol. 916). Berlin/Heidelberg, Germany: Springer.
+Burke, E. K., Burke, E. K., Kendall, G., & Kendall, G. (2014). Search methodologies: introductory tutorials in optimization and decision support techniques. Springer.-----------
+* Poli, R., & Koza, J. (2013). Genetic programming. In Search methodologies: Introductory tutorials in optimization and decision support techniques (pp. 143-185). Boston, MA: Springer US.
+* Mayer, D. G., Kinghorn, B. P., & Archer, A. A. (2005). Differential evolution–an easy and efficient evolutionary algorithm for model optimisation. Agricultural Systems, 83(3), 315-328.
+* Qing, A. (2009). Differential evolution: fundamentals and applications in electrical engineering. John Wiley & Sons.
+* Feoktistov, V. (2006). Differential evolution (pp. 1-24). Springer US.
+* Zhu, Z., Chen, L., Xia, C., & Yuan, C. (2018). A history-driven differential evolution algorithm for optimization in dynamic environments. International Journal on Artificial Intelligence Tools, 27(06), 1850028.
+* Wong, K. P., & Dong, Z. Y. (2005, November). Differential evolution, an alternative approach to evolutionary algorithm. In Proceedings of the 13th International Conference on, Intelligent Systems Application to Power Systems (pp. 73-83). IEEE.
+* Vikhar, P. A. (2016, December). Evolutionary algorithms: A critical review and its future prospects. In 2016 International conference on global trends in signal processing, information computing and communication (ICGTSPICC) (pp. 261-265). IEEE.
+* Karaboğa, D., & Ökdem, S. (2004). A simple and global optimization algorithm for engineering problems: differential evolution algorithm. Turkish Journal of Electrical Engineering and Computer Sciences, 12(1), 53-60.
+* Hegerty, B., Hung, C. C., & Kasprak, K. (2009, November). A comparative study on differential evolution and genetic algorithms for some combinatorial problems. In Proceedings of 8th Mexican international conference on artificial intelligence (Vol. 9, p. 13).
+* Plagianakos, V. P., Tasoulis, D. K., & Vrahatis, M. N. (2008). A review of major application areas of differential evolution. Advances in differential evolution, 197-238.
+* Tanabe, R., & Fukunaga, A. (2013, June). Success-history based parameter adaptation for differential evolution. In 2013 IEEE congress on evolutionary computation (pp. 71-78). IEEE.
+* Gong, W., Cai, Z., & Zhu, L. (2009). An efficient multiobjective differential evolution algorithm for engineering design. Structural and Multidisciplinary Optimization, 38, 137-157.
+* Pant, M., Zaheer, H., Garcia-Hernandez, L., & Abraham, A. (2020). Differential Evolution: A review of more than two decades of research. Engineering Applications of Artificial Intelligence, 90, 103479.
+* Kachitvichyanukul, V. (2012). Comparison of three evolutionary algorithms: GA, PSO, and DE. Industrial Engineering and Management Systems, 11(3), 215-223.
+* Kramer, O., & Kramer, O. (2017). Genetic algorithms (pp. 11-19). Springer International Publishing.
+* Tušar, T., & Filipič, B. (2007, March). Differential evolution versus genetic algorithms in multiobjective optimization. In International Conference on Evolutionary Multi-Criterion Optimization (pp. 257-271). Berlin, Heidelberg: Springer Berlin Heidelberg.
+* Yu, X., & Gen, M. (2010). Introduction to evolutionary algorithms. Springer Science & Business Media.
+* Hrstka, O., Kučerová, A., Lepš, M., & Zeman, J. (2003). A competitive comparison of different types of evolutionary algorithms. Computers & Structures, 81(18-19), 1979-1990.
+* Zeng, Z., Zhang, M., Chen, T., & Hong, Z. (2021). A new selection operator for differential evolution algorithm. Knowledge-Based Systems, 226, 107150.
+* Moraglio, A., Krawiec, K., & Johnson, C. G. (2012). Geometric semantic genetic programming. In Parallel Problem Solving from Nature-PPSN XII: 12th International Conference, Taormina, Italy, September 1-5, 2012, Proceedings, Part I 12 (pp. 21-31). Springer Berlin Heidelberg.
+* Zaharie, D. (2009). Influence of crossover on the behavior of differential evolution algorithms. Applied soft computing, 9(3), 1126-1138.
+* Yang, Z., Yao, X., & He, J. (2008). Making a difference to differential evolution. Advances in metaheuristics for hard optimization, 397-414.
+
+
+Application Areas
+* Chakraborty, U. K. (Ed.). (2008). Advances in differential evolution (Vol. 143). Springer Science & Business Media.
+* Liao, T. W. (2010). Two hybrid differential evolution algorithms for engineering design optimization. Applied Soft Computing, 10(4), 1188-1199.
+* Gong, W., Cai, Z., & Liang, D. (2014). Engineering optimization by means of an improved constrained differential evolution. Computer Methods in Applied Mechanics and Engineering, 268, 884-904.
+* Masike, R., Kaur, K., Arora, R., & Shridhara, S. N. (2024). Optimization of Holding Force for a Climbing Robot Based on a Differential Evolutionary Algorithm. Recent Advances in Electrical & Electronic Engineering (Formerly Recent Patents on Electrical & Electronic Engineering), 17(1), 54-59.
+* Tiwari, N., & Srivastava, L. (2016, March). Generation scheduling and micro-grid energy management using differential evolution algorithm. In 2016 International Conference on Circuit, Power and Computing Technologies (ICCPCT) (pp. 1-7). IEEE.
+* Karaseva, T. S. (2022). Hybridization of Machine Learning Models and Differential Evolution in Data Mining. European Proceedings of Computers and Technology.
+* Da Silva, A. J., Mineu, N. L., & Ludermir, T. B. (2010). Evolving artificial neural networks using adaptive differential evolution. In Advances in Artificial Intelligence–IBERAMIA 2010: 12th Ibero-American Conference on AI, Bahía Blanca, Argentina, November 1-5, 2010. Proceedings 12 (pp. 396-405). Springer Berlin Heidelberg.
+*
