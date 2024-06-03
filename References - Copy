@@ -1,11 +1,8 @@
 
 * Hann, I. H., Roberts, J., Slaughter, S., & Fielding, R. (2002). Economic incentives for participating in open source software projects. ICIS 2002 Proceedings, 33.
-* Wang et al. ,2019 ---find
-Wang, L., Yang, Y., & Wang, Y. (2019, September). Do higher incentives lead to better performance?-An exploratory study on software crowdsourcing. In 2019 ACM/IEEE International Symposium on Empirical Software Engineering and Measurement (ESEM) (pp. 1-11). IEEE.
+* Wang, L., Yang, Y., & Wang, Y. (2019, September). Do higher incentives lead to better performance?-An exploratory study on software crowdsourcing. In 2019 ACM/IEEE International Symposium on Empirical Software Engineering and Measurement (ESEM) (pp. 1-11). IEEE.
 * Nicolette, D. (2015). Software development metrics. Simon and Schuster.
 * Mahaney, R., & Lederer, A. (2001). Information Systems Development Project Success: The Use of Incentives and Rewards for Developers.
-* Kogon et al. (2015) --find
-
 * Nakamoto, S. (2008). Bitcoin: A peer-to-peer electronic cash system.
 * Au, S., & Power, T. (2018). Tokenomics: The crypto shift of blockchains, ICOs, and tokens. Packt Publishing Ltd.
 * Luo, N., & Zheng, E. (2023). Token Incentive and Blockchain Developer Contribution. Available at SSRN.
@@ -15,8 +12,7 @@ Wang, L., Yang, Y., & Wang, Y. (2019, September). Do higher incentives lead to b
 * Blau, B. S., Hildenbrand, T., Armbruster, M., Fassunge, M. G., Xu, Y., & Knapper, R. (2011, June). Incentives and Performance in Large-Scale Lean Software Development-An Agent-Based Simulation Approach. In International Conference on Evaluation of Novel Software Approaches to Software Engineering (Vol. 2, pp. 26-37). SCITEPRESS.
 * Laird, L. M., & Brennan, M. C. (2006). Software measurement and estimation: a practical approach. John Wiley & Sons.
 * Fenton, N., & Bieman, J. (2014). Software metrics: a rigorous and practical approach. CRC press.
-* Besker et al., 2022 --- Find
-
+* Besker, T., Martini, A., & Bosch, J. (2022). The use of incentives to promote technical debt management. Information and Software Technology, 142, 106740.
 * De Bassi, P. R., Wanderley, G. M. P., Banali, P. H., & Paraiso, E. C. (2018, May). Measuring developers' contribution in source code using quality metrics. In 2018 IEEE 22nd International Conference on Computer Supported Cooperative Work in Design ((CSCWD)) (pp. 39-44). IEEE.
 * Heroux, M. A. (2016). Sustainable & Productive: Improving Incentives for Quality Software (No. SAND2016-7631C). Sandia National Lab.(SNL-NM), Albuquerque, NM (United States).
 * Krishnamurthy, S. (2006). On the intrinsic and extrinsic motivation of free/libre/open source (FLOSS) developers. Knowledge, Technology & Policy, 18(4), 17-39.
@@ -27,7 +23,7 @@ Wang, L., Yang, Y., & Wang, Y. (2019, September). Do higher incentives lead to b
 * Król, M., Reñé, S., Ascigil, O., & Psaras, I. (2018, June). ChainSoft: collaborative software development using smart contracts. In Proceedings of the 1st Workshop on Cryptocurrencies and Blockchains for Distributed Systems (pp. 1-6).
 * Buterin, V. (2014). Ethereum white paper: a next generation smart contract & decentralized application platform. First version, 53.
 * Tonelli, R., Destefanis, G., Marchesi, M., & Ortu, M. (2018). Smart contracts software metrics: a first study. arXiv preprint arXiv:1802.01517.
-* Miraz, M. H., & Ali, M. (2020). Blockchain enabled smart contract based applications: Deficiencies with the software development life cycle models. arXiv preprint arXiv:2001.10589. ************************************* review the article find another one more suitable
+* Miraz, M. H., & Ali, M. (2020). Blockchain enabled smart contract based applications: Deficiencies with the software development life cycle models. arXiv preprint arXiv:2001.10589.
 * Malinova, K., & Park, A. (2023). Tokenomics: when tokens beat equity. Management Science, 69(11), 6568-6583.
 * Canidio, A. (2018). Financial incentives for open source development: the case of Blockchain.
 * Zheng, Z., Xie, S., Dai, H., Chen, X., & Wang, H. (2017, June). An overview of blockchain technology: Architecture, consensus, and future trends. In 2017 IEEE international congress on big data (BigData congress) (pp. 557-564). Ieee.
@@ -41,8 +37,6 @@ Wang, L., Yang, Y., & Wang, Y. (2019, September). Do higher incentives lead to b
 * Cong, L. W., Li, Y., & Wang, N. (2021). Tokenomics: Dynamic adoption and valuation. The Review of Financial Studies, 34(3), 1105-1155.
 * Wandmacher, R. (2019). Tokenomics. Cryptofinance and Mechanisms of Exchange: The Making of Virtual Currency, 113-123.
 * Tanniru, M., Niu, J., Feng, C., Duque, C. G., Lu, C., & Krishnan, H. (2021). Incentives to engage blockchain and ecosystem actors. Building Decentralized Trust: Multidisciplinary Perspectives on the Design of Blockchains and Distributed Ledgers, 35-61.
-* (Liu, 2019) ------- Find
-
+* Liu, S. (2019, April). Research on token incentive mechanism of open source project-take block chain project as an example. In IOP conference series: Earth and environmental science (Vol. 252, No. 2, p. 022029). IOP Publishing.
 * Drasch, B. J., Fridgen, G., Manner-Romberg, T., Nolting, F. M., & Radszuwill, S. (2020). The token’s secret: The two-faced financial incentive of the token economy. Electronic Markets, 30, 557-567.
 * Freni, P., Ferro, E., & Moncada, R. (2022). Tokenomics and blockchain tokens: A design-oriented morphological framework. Blockchain: Research and Applications, 3(1), 100069.
-* 
