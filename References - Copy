@@ -1,0 +1,48 @@
+
+* Hann, I. H., Roberts, J., Slaughter, S., & Fielding, R. (2002). Economic incentives for participating in open source software projects. ICIS 2002 Proceedings, 33.
+* Wang et al. ,2019 ---find
+Wang, L., Yang, Y., & Wang, Y. (2019, September). Do higher incentives lead to better performance?-An exploratory study on software crowdsourcing. In 2019 ACM/IEEE International Symposium on Empirical Software Engineering and Measurement (ESEM) (pp. 1-11). IEEE.
+* Nicolette, D. (2015). Software development metrics. Simon and Schuster.
+* Mahaney, R., & Lederer, A. (2001). Information Systems Development Project Success: The Use of Incentives and Rewards for Developers.
+* Kogon et al. (2015) --find
+
+* Nakamoto, S. (2008). Bitcoin: A peer-to-peer electronic cash system.
+* Au, S., & Power, T. (2018). Tokenomics: The crypto shift of blockchains, ICOs, and tokens. Packt Publishing Ltd.
+* Luo, N., & Zheng, E. (2023). Token Incentive and Blockchain Developer Contribution. Available at SSRN.
+* Sidky, A., & Smith, G. (2009). Becoming Agile:... in an imperfect world. Simon and Schuster.
+* Stellman, A., & Greene, J. (2017). Head First Agile: A Brain-Friendly Guide to Agile Principles, Ideas, and Real-World Practices. " O'Reilly Media, Inc.".
+* Kalliamvakou, E., Gousios, G., Spinellis, D., & Nancy, P. (2009). Measuring developer contribution from software repository data.
+* Blau, B. S., Hildenbrand, T., Armbruster, M., Fassunge, M. G., Xu, Y., & Knapper, R. (2011, June). Incentives and Performance in Large-Scale Lean Software Development-An Agent-Based Simulation Approach. In International Conference on Evaluation of Novel Software Approaches to Software Engineering (Vol. 2, pp. 26-37). SCITEPRESS.
+* Laird, L. M., & Brennan, M. C. (2006). Software measurement and estimation: a practical approach. John Wiley & Sons.
+* Fenton, N., & Bieman, J. (2014). Software metrics: a rigorous and practical approach. CRC press.
+* Besker et al., 2022 --- Find
+
+* De Bassi, P. R., Wanderley, G. M. P., Banali, P. H., & Paraiso, E. C. (2018, May). Measuring developers' contribution in source code using quality metrics. In 2018 IEEE 22nd International Conference on Computer Supported Cooperative Work in Design ((CSCWD)) (pp. 39-44). IEEE.
+* Heroux, M. A. (2016). Sustainable & Productive: Improving Incentives for Quality Software (No. SAND2016-7631C). Sandia National Lab.(SNL-NM), Albuquerque, NM (United States).
+* Krishnamurthy, S. (2006). On the intrinsic and extrinsic motivation of free/libre/open source (FLOSS) developers. Knowledge, Technology & Policy, 18(4), 17-39.
+* Atal, V., & Shankar, K. (2015). Developers’ incentives and open-source software licensing: GPL vs BSD. The BE Journal of Economic Analysis & Policy, 15(3), 1381-1416.
+* Storey, M. A., Zimmermann, T., Bird, C., Czerwonka, J., Murphy, B., & Kalliamvakou, E. (2019). Towards a theory of software developer job satisfaction and perceived productivity. IEEE Transactions on Software Engineering, 47(10), 2125-2142.
+* Fournier, C. (2017). The Manager's Path: A Guide for Tech Leaders Navigating Growth and Change. " O'Reilly Media, Inc.".
+* Fitzgerald, B., & Stol, K. J. (2017). Continuous software engineering: A roadmap and agenda. Journal of Systems and Software, 123, 176-189.
+* Król, M., Reñé, S., Ascigil, O., & Psaras, I. (2018, June). ChainSoft: collaborative software development using smart contracts. In Proceedings of the 1st Workshop on Cryptocurrencies and Blockchains for Distributed Systems (pp. 1-6).
+* Buterin, V. (2014). Ethereum white paper: a next generation smart contract & decentralized application platform. First version, 53.
+* Tonelli, R., Destefanis, G., Marchesi, M., & Ortu, M. (2018). Smart contracts software metrics: a first study. arXiv preprint arXiv:1802.01517.
+* Miraz, M. H., & Ali, M. (2020). Blockchain enabled smart contract based applications: Deficiencies with the software development life cycle models. arXiv preprint arXiv:2001.10589. ************************************* review the article find another one more suitable
+* Malinova, K., & Park, A. (2023). Tokenomics: when tokens beat equity. Management Science, 69(11), 6568-6583.
+* Canidio, A. (2018). Financial incentives for open source development: the case of Blockchain.
+* Zheng, Z., Xie, S., Dai, H., Chen, X., & Wang, H. (2017, June). An overview of blockchain technology: Architecture, consensus, and future trends. In 2017 IEEE international congress on big data (BigData congress) (pp. 557-564). Ieee.
+* Yilmaz, M., Tasel, S., Tuzun, E., Gulec, U., O’Connor, R. V., & Clarke, P. M. (2019). Applying blockchain to improve the integrity of the software development process. In Systems, Software and Services Process Improvement: 26th European Conference, EuroSPI 2019, Edinburgh, UK, September 18–20, 2019, Proceedings 26 (pp. 260-271). Springer International Publishing.
+* Almeida, S., Albuquerque, A., & Silva, A. (2019). An approach to develop software that uses blockchain. In Software Engineering and Algorithms in Intelligent Systems: Proceedings of 7th Computer Science On-line Conference 2018, Volume 1 7 (pp. 346-355). Springer International Publishing.
+* Mougayar, W. (2016). The business blockchain: promise, practice, and application of the next Internet technology. John Wiley & Sons.
+* Hammad, M., Iqbal, J., Hassan, C. A. U., Hussain, S., Ullah, S. S., Uddin, M., ... & Alsaqour, R. (2023). Blockchain-Based Decentralized Architecture for Software Version Control. Applied Sciences, 13(5), 3066.
+* D'mello, G., & González-Vélez, H. (2019, February). Distributed software dependency management using blockchain. In 2019 27th Euromicro International Conference on Parallel, Distributed and Network-Based Processing (PDP) (pp. 132-139). IEEE.
+* Tapscott, D., & Tapscott, A. (2016). Blockchain revolution: how the technology behind bitcoin is changing money, business, and the world. Penguin.
+* Singi, K., Kaulgud, V., Bose, R. J. C., Choudhury, S. G., Podder, S., & Burden, A. P. (2020, February). Are software engineers incentivized enough? An outcome based incentive framework using tokens. In 2020 IEEE International Workshop on Blockchain Oriented Software Engineering (IWBOSE) (pp. 37-47). IEEE.
+* Cong, L. W., Li, Y., & Wang, N. (2021). Tokenomics: Dynamic adoption and valuation. The Review of Financial Studies, 34(3), 1105-1155.
+* Wandmacher, R. (2019). Tokenomics. Cryptofinance and Mechanisms of Exchange: The Making of Virtual Currency, 113-123.
+* Tanniru, M., Niu, J., Feng, C., Duque, C. G., Lu, C., & Krishnan, H. (2021). Incentives to engage blockchain and ecosystem actors. Building Decentralized Trust: Multidisciplinary Perspectives on the Design of Blockchains and Distributed Ledgers, 35-61.
+* (Liu, 2019) ------- Find
+
+* Drasch, B. J., Fridgen, G., Manner-Romberg, T., Nolting, F. M., & Radszuwill, S. (2020). The token’s secret: The two-faced financial incentive of the token economy. Electronic Markets, 30, 557-567.
+* Freni, P., Ferro, E., & Moncada, R. (2022). Tokenomics and blockchain tokens: A design-oriented morphological framework. Blockchain: Research and Applications, 3(1), 100069.
+* 
