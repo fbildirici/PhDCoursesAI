@@ -13,54 +13,75 @@ nlp = spacy.load('en_core_web_sm')
 # İngilizce stopwords'leri yüklüyoruz
 stop_words = set(stopwords.words('english'))
 
+# Belirli kelimelerle ilgili anlam grupları (genişletilebilir)
+# "Jaguar" kelimesinin farklı anlamlarına dair bağlam kelimeleri
+semantic_groups = {
+    "jaguar": {
+        "animal": ["wildlife", "animal", "creature", "predator", "jungle", "cat"],
+        "car": ["car", "vehicle", "brand", "luxury", "drive", "engine", "model"]
+    }
+}
 
-# Bir kelimenin farklı anlamlara sahip olup olmadığını kontrol eden fonksiyon
-def check_word_meanings(word):
-    synsets = wn.synsets(word)
-    if len(synsets) > 1:
-        return True
-    return False
 
-
-# Paradoxları tespit eden fonksiyon
-def find_paradoxes(sentences):
-    paradoxes = []
-    word_meanings = {}
-
-    # Cümleleri analiz et
-    for sentence in sentences:
+# Bir kelimenin anlamını bağlamına göre analiz eden fonksiyon
+def get_contextual_meaning(word, sentence):
+    word = word.lower()
+    if word in semantic_groups:
         doc = nlp(sentence)
+        for token in doc:
+            token_text = token.text.lower()
+            for meaning, related_words in semantic_groups[word].items():
+                if token_text in related_words:
+                    return meaning
+    return None
+
+
+# Semantik çelişki olup olmadığını kontrol eden fonksiyon
+def check_semantic_conflict(word, meaning1, meaning2):
+    return meaning1 != meaning2
+
+
+# Paradoxları tespit eden ana fonksiyon
+def find_paradoxes(sentences, already_checked_sentences, context_map, already_found_paradoxes):
+    paradoxes = []
+
+    # Yeni cümleleri kontrol et, daha önce kontrol edilen cümleler yeniden işlenmesin
+    for sentence in sentences:
+        if sentence in already_checked_sentences:
+            continue  # Cümle zaten kontrol edildi, tekrar kontrol etmiyoruz
+
+        already_checked_sentences.add(sentence)
+        doc = nlp(sentence)
+
+        # Her kelimenin bağlamına göre anlamını bul
         for token in doc:
             word = token.text.lower()
 
-            # Stopwords ve sadece isimleri dikkate al
             if token.pos_ == "NOUN" and word not in stop_words:
-                # Kelimenin anlamlarını kontrol et
-                if check_word_meanings(word):
-                    if word in word_meanings:
-                        # Daha önce farklı bir cümlede kullanıldıysa semantik paradoks olabilir
-                        paradoxes.append(("Semantik Paradoks", word, word_meanings[word], sentence))
+                meaning = get_contextual_meaning(word, sentence)
+                if meaning:
+                    if word in context_map:
+                        previous_meaning, previous_sentence = context_map[word]
+                        if check_semantic_conflict(word, previous_meaning, meaning):
+                            if (word, previous_sentence, sentence) not in already_found_paradoxes:
+                                paradoxes.append(("Semantik Çelişki", word, previous_sentence, sentence))
+                                already_found_paradoxes.add((word, previous_sentence, sentence))
                     else:
-                        word_meanings[word] = sentence
-
-    # Mantıksal paradoksları tespit etmek için cümleleri incele
-    for i in range(len(sentences) - 1):
-        sentence1 = sentences[i].strip().lower()
-        sentence2 = sentences[i + 1].strip().lower()
-
-        # Basit mantıksal paradoks örneği: bir cümlenin diğerini yalanlaması
-        if ("true" in sentence1 and "false" in sentence2) or ("false" in sentence1 and "true" in sentence2):
-            paradoxes.append(("Mantıksal Paradoks", sentence1, sentence2))
+                        context_map[word] = (meaning, sentence)
 
     return paradoxes
 
 
 # Sonsuz döngüde kullanıcıdan cümleleri alma
 def main():
-    all_sentences = []
+    all_text = ""
+    already_checked_sentences = set()  # Daha önce kontrol edilen cümleler
+    context_map = {}  # Her kelimenin önceki anlamı ve cümlesi
+    already_found_paradoxes = set()  # Bulunan paradokslar
+
     while True:
         # Kullanıcıdan cümle al
-        user_input = input("Lütfen bir cümle girin (veya 'HAYIR' yazarak çıkabilirsiniz): ").strip()
+        user_input = input("Lütfen bir veya birden fazla cümle girin (veya 'HAYIR' yazarak çıkabilirsiniz): ").strip()
 
         # Kullanıcı 'HAYIR' yazarsa çık
         if user_input.lower() == 'hayır':
@@ -69,31 +90,29 @@ def main():
 
         # Kullanıcı devam etmek istiyorsa cümleyi analiz et
         if user_input:
-            all_sentences.append(user_input)
+            # Metni bir bütün olarak birleştiriyoruz
+            all_text += " " + user_input
+
+            # Girilen tüm metni SpaCy ile cümlelere ayır
+            doc = nlp(all_text)
+            sentences = [sent.text.strip() for sent in doc.sents]
 
             # Paradoxları bul
-            paradoxes = find_paradoxes(all_sentences)
+            paradoxes = find_paradoxes(sentences, already_checked_sentences, context_map, already_found_paradoxes)
 
             # Sonuçları göster
             if paradoxes:
                 print("\nParadoxlar bulundu:")
                 for paradox in paradoxes:
                     paradox_type = paradox[0]
-                    if paradox_type == "Semantik Paradoks":
-                        word, first_sentence, second_sentence = paradox[1:]
+                    if paradox_type == "Semantik Çelişki":
+                        word, first_context, second_context = paradox[1:]
                         print(f"{paradox_type}:")
                         print(f"Kelime: {word}")
-                        print(f"İlk cümle: {first_sentence}")
-                        print(f"İkinci cümle: {second_sentence}")
+                        print(f"İlk bağlam: {first_context}")
+                        print(f"İkinci bağlam: {second_context}")
                         print(
-                            f"Açıklama: '{word}' kelimesi farklı anlamlarda kullanıldığı için bu bir semantik paradokstur.")
-                        print("---")
-                    elif paradox_type == "Mantıksal Paradoks":
-                        first_sentence, second_sentence = paradox[1:]
-                        print(f"{paradox_type}:")
-                        print(f"İlk cümle: {first_sentence}")
-                        print(f"İkinci cümle: {second_sentence}")
-                        print("Açıklama: Bu iki cümle birbiriyle çelişiyor, dolayısıyla bu bir mantıksal paradokstur.")
+                            f"Açıklama: '{word}' kelimesi farklı bağlamlarda farklı anlamlarda kullanıldığı için bu bir semantik paradokstur.")
                         print("---")
             else:
                 print("Paradox bulunamadı.\n")
